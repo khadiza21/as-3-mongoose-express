@@ -1,4 +1,4 @@
-# 📚 Library Management API
+#  Library Management API
 
 A backend REST API built using **Express**, **TypeScript**, and **MongoDB (Mongoose)** to manage books and borrowing functionalities in a library system.
 
@@ -29,7 +29,7 @@ A backend REST API built using **Express**, **TypeScript**, and **MongoDB (Mongo
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend Framework**: Express.js
 - **Language**: TypeScript
@@ -67,9 +67,9 @@ npm run build
 npm start
 ```
 
-🔌 **API Endpoints**
+ **API Endpoints**
 
-📘 **Book Routes**
+ **Book Routes**
 
 | Method | Endpoint       | Description                               |
 | ------ | -------------- | ----------------------------------------- |
@@ -79,7 +79,7 @@ npm start
 | PUT    | /api/books/:id | Update book by ID                         |
 | DELETE | /api/books/:id | Delete book                               |
 
-📖 **Borrow Routes**
+ **Borrow Routes**
 
 | Method | Endpoint    | Description                              |
 | ------ | ----------- | ---------------------------------------- |
@@ -88,15 +88,15 @@ npm start
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 <pre> ├── <b>src/</b> │ ├── <b>config/</b> # Database connection config │ │ └── index.ts │ ├── <b>controllers/</b> # Controller functions │ │ ├── book.controller.ts │ │ └── borrow.controller.ts │ ├── <b>middlewares/</b> # Custom error middleware │ │ └── error.middleware.ts │ ├── <b>models/</b> # Mongoose models and schemas │ │ ├── book.model.ts │ │ └── borrow.model.ts │ ├── <b>routes/</b> # API routes │ │ ├── book.routes.ts │ │ └── borrow.routes.ts ├── <b>app.ts</b> # Express app config (outside src) ├── <b>server.ts</b> # Entry point for the server ├── <b>package.json</b> ├── <b>tsconfig.json</b> ├── <b>.eslintrc.js</b> └── <b>README.md</b> # Project documentation </pre>
 
-👨‍💻 **Author**
+ **Author**
 
-👨‍🎓 Name: Khadiza  
-💻 GitHub: [@khadiza21](https://github.com/khadiza21)  
-📧 Email: bibikhadiza4740@gmail.com
+ Name: Khadiza  
+ GitHub: [@khadiza21](https://github.com/khadiza21)  
+ Email: bibikhadiza4740@gmail.com
 
 <!-- type-mongo -->
 <!-- TJ71jJP6XgtC6vDg -->
