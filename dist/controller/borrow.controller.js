@@ -20,20 +20,26 @@ const borrowBook = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         const { book: bookId, quantity, dueDate } = req.body;
         const book = yield book_model_1.default.findById(bookId);
         if (!book) {
-            return res.status(404).json({
+            res.status(404).json({
                 success: false,
                 message: 'Book not found',
             });
+            return;
         }
         if (book.copies < quantity) {
-            return res.status(400).json({
+            res.status(400).json({
                 success: false,
                 message: 'Not enough copies available',
             });
+            return;
         }
         book.copies -= quantity;
         yield book.updateAvailability();
-        const borrow = yield borrow_models_1.default.create({ book: bookId, quantity, dueDate });
+        const borrow = yield borrow_models_1.default.create({
+            book: bookId,
+            quantity,
+            dueDate,
+        });
         res.status(201).json({
             success: true,
             message: 'Book borrowed successfully',

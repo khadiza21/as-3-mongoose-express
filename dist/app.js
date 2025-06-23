@@ -13,7 +13,7 @@ app.use(express_1.default.json());
 app.use(error_middleware_1.errorHandler);
 // route
 app.get('/', (req, res) => {
-    res.send('Library API is running');
+    res.send('Mongoose-Express-TypeScript');
 });
 app.use('/api/books', book_routes_1.default);
 app.use('/api/borrow', borrow_routes_1.default);

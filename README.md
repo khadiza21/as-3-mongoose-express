@@ -90,26 +90,7 @@ npm start
 
 ## 📂 Project Structure
 
-├── src/
-│ ├── config/ # Database connection config
-│ │ └── index.ts
-│ ├── controllers/ # Controller functions
-│ │ ├── book.controller.ts
-│ │ └── borrow.controller.ts
-│ ├── middlewares/ # Custom error middleware
-│ │ └── error.middleware.ts
-│ ├── models/ # Mongoose models and schemas
-│ │ ├── book.model.ts
-│ │ └── borrow.model.ts
-│ ├── routes/ # API routes
-│ │ ├── book.routes.ts
-│ │ └── borrow.routes.ts
-├── app.ts # Express app config (outside src)
-├── server.ts # Entry point for the server
-├── package.json
-├── tsconfig.json
-├── .eslintrc.js
-└── README.md # Project documentation
+<pre> ├── <b>src/</b> │ ├── <b>config/</b> # Database connection config │ │ └── index.ts │ ├── <b>controllers/</b> # Controller functions │ │ ├── book.controller.ts │ │ └── borrow.controller.ts │ ├── <b>middlewares/</b> # Custom error middleware │ │ └── error.middleware.ts │ ├── <b>models/</b> # Mongoose models and schemas │ │ ├── book.model.ts │ │ └── borrow.model.ts │ ├── <b>routes/</b> # API routes │ │ ├── book.routes.ts │ │ └── borrow.routes.ts ├── <b>app.ts</b> # Express app config (outside src) ├── <b>server.ts</b> # Entry point for the server ├── <b>package.json</b> ├── <b>tsconfig.json</b> ├── <b>.eslintrc.js</b> └── <b>README.md</b> # Project documentation </pre>
 
 👨‍💻 **Author**
 
